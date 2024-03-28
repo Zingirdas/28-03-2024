@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darbuotojai</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./darbuotojai.js" defer></script>
+</head>
+
+<body>
+    <div class="container-xxl mt-5 border border-dark rounded-4" style="background-color:antiquewhite; font-family: 'Times New Roman', Times, serif; font-size: 25px;">
+        <div class="card mb-1 mt-3 rounded-4" style="background-color:antiquewhite">
+            <img src="./knyga.png" class="card-img-center rounded-4" alt="...">
+        </div>
+        <div class="row">
+            <div class="col-md-5 mt-3">
+                <div class="card-header">
+                </div>
+                <div class="card-body mt-3">
+                    <div class="mb-3">
+                        <label class="form-label">Iveskite darbuotojo vardą</label>
+                        <input type="text" class="form-control fs-4" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Iveskite darbuotojo pavardę</label>
+                        <input type="text" class="form-control fs-4" id="surrname">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Iveskite darbuotojo atlyginimą EUR</label>
+                        <input type="text" class="form-control fs-4" id="salary">
+                    </div>
+                    <button class="btn btn-success mb-4" style="font-size: 20px;" id="add_empl">Pridėti į sąrasą</button>
+                </div>
+            </div>
+            <div class="col-md-7 mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="list-group mb-3 fs-4" id="tasks_list">
+                        </ul>
+                    </div>
+
+
+                    <li id="total_info" class="list-group-item fs-4" style="background-color: antiquewhite;"></li>
+                    </ul>
+                </div>
+                <button class="btn btn-danger mt-3" id="del_list">Išvalyti sąrašą</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+
+</html>
