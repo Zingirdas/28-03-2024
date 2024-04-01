@@ -25,7 +25,7 @@ const showStaff = () => {
     staff.forEach((t, i) => {
         const newStaff = document.createElement("li");
         newStaff.className = "list-group-item";
-        newStaff.textContent = `Vardas: ${t.name}, Pavardė: ${t.surrname}, Atlyginimas: ${t.salary}`;
+        newStaff.textContent = `${t.name} ${t.surrname} - ${t.salary} EUR`;
         list.appendChild(newStaff);
 
         totalSalary += parseFloat(t.salary);
@@ -41,11 +41,23 @@ const showStaff = () => {
         newStaff.appendChild(deleteBtn);
     });
 
+
+    salInp.addEventListener("change", function () {
+        const input = parseFloat(salInp.value);
+        if (isNaN(input)) {
+            alert("Prasau įvesti skaičius");
+            salInp.value = "";
+        }
+    });
+
     const totalEmployees = staff.length;
     const averageSalary = totalEmployees > 0 ? totalSalary / totalEmployees : 0;
 
     const totalInfo = document.getElementById("total_info");
-    totalInfo.textContent = `Darbuotojų: ${totalEmployees} Atlyginimų suma: ${totalSalary.toFixed(2)} Atlyginimų vidurkis: ${averageSalary.toFixed(2)}`;
+    const totalInfo1 = document.getElementById("total_info1");
+
+    totalInfo.textContent = `Atlyginimų suma: ${totalSalary.toFixed(2)} EUR`;
+    totalInfo1.textContent = `Atlyginimų vidurkis: ${averageSalary.toFixed(2)} EUR`;
 
 }
 

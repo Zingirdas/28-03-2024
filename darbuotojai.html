@@ -21,32 +21,35 @@
                 </div>
                 <div class="card-body mt-3">
                     <div class="mb-3">
-                        <label class="form-label">Iveskite darbuotojo vardą</label>
-                        <input type="text" class="form-control fs-4" id="name">
+                        <label class="form-label fs-5">Iveskite darbuotojo vardą:</label>
+                        <input type="text" class="form-control fs-5" autocomplete="given-name" id="name">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Iveskite darbuotojo pavardę</label>
-                        <input type="text" class="form-control fs-4" id="surrname">
+                        <label class="form-label fs-5">Iveskite darbuotojo pavardę:</label>
+                        <input type="text" class="form-control fs-5" autocomplete="family-name" id="surrname">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Iveskite darbuotojo atlyginimą EUR</label>
-                        <input type="text" class="form-control fs-4" id="salary">
+                        <label class="form-label fs-5">Iveskite darbuotojo atlyginimą EUR:</label>
+                        <input type="text" class="form-control fs-5" autocomplete="cc-number" id="salary">
                     </div>
-                    <button class="btn btn-success mb-4" style="font-size: 20px;" id="add_empl">Pridėti į sąrasą</button>
+                    <button class="btn btn-success mb-4 fs-5" style="font-size: 20px;" id="add_empl">Pridėti į sąrasą</button>
                 </div>
             </div>
-            <div class="col-md-7 mt-5">
-                <div class="card">
-                    <div class="card-body">
-                        <ul class="list-group mb-3 fs-4" id="tasks_list">
+            <div class="col-md-7 mt-5 fs-5">
+                Darbuotojų sąrašas su atlyginimais:
+                <div class="card mt-2" style="background-color: antiquewhite;">
+                    <div class="card-body" style="background-color: antiquewhite;">
+                        <ul class="list-group mb-3 fs-5" id="tasks_list">
                         </ul>
                     </div>
+                    <div>
 
+                        <li id="total_info" class="list-group-item fs-5" style="background-color: antiquewhite;margin-left: 20px;"></li>
+                        <li id="total_info1" class="list-group-item fs-5 mt-3" style="background-color: antiquewhite;margin-left: 20px; margin-bottom: 20px;"></li>
+                    </div>
 
-                    <li id="total_info" class="list-group-item fs-4" style="background-color: antiquewhite;"></li>
-                    </ul>
                 </div>
-                <button class="btn btn-danger mt-3" id="del_list">Išvalyti sąrašą</button>
+                <button class="btn btn-danger mt-3 fs-5 mb-3" id="del_list">Išvalyti sąrašą</button>
 
             </div>
 
